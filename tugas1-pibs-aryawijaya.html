@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 1 PIBS - Arya Wijaya</title>
+    <style>
+        * {
+          box-sizing: border-box;
+        }            
+
+        header { 
+          background-color: rgb(94, 231, 255);
+          padding: 30px;
+          text-align: center;
+          font-size: 35px;
+          color: rgb(0, 132, 255);
+        } /*Style class Header*/
+
+        nav {
+          float: left;
+          width: 25%;
+          height: 350px;
+          background: rgb(0, 204, 255);
+          padding: 20px;
+        }     /*Style class Nav*/
+            nav ul {
+            list-style-type: none;
+            padding: 0;
+            }  /*Style Ul di Nav*/
+
+        article {
+          float: left;
+          padding: 20px;
+          width: 50%;
+          background-color: #008cff;
+          height: 350px;
+        } /*Style class Article*/
+
+        aside {
+          float: left;
+          padding: 20px;
+          width: 25%;
+          background-color: #00f7ff;
+          height: 350px;
+          font-size: 15px;
+        } /*Style class Aside*/
+
+        .content::after {
+          content: "";
+          display: table;
+          clear: both;
+        }   /*Clear yang ada sesudah class Content*/
+
+        footer {
+          background-color: rgb(59, 199, 235);
+          padding: 10px;
+          text-align: center;
+          color: white;
+        } /*Style class footer*/    
+
+        @media (max-width: 750px) {
+          nav, article,aside {
+            width: 100%;
+            height: auto;
+          }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <header>
+          <h2>ARYA WIJAYA</h2>
+        </header>
+        
+        <div class="content">
+            <nav>
+                <h1>Media Sosial Saya</h1>
+                <ul>
+                    <li><a href="https://github.com/Aryaw1jaya"><img src="logo-github.png" width="10%" alt="logo github"> Aryaw1jaya</a></li><br>
+                    <li><a href="https://www.instagram.com/arya.wjy/"><img src="logo-ig.png" width="10%" alt="logo Instagram"> Arya.wjy</a></li><br>
+                    <li><a href="https://wa.me/6281215327714"><img src="logo-wa.png" width="10%" alt="logo whatsapp"> 081215327714</a></li><br>
+                    <li><a href="mailto:arya.wijaya@student.upj.ac.id"><img src="logo-email.png" width="10%" alt="logo email">Arya.wijaya@student.upj.ac.id</a></li>
+                </ul>
+            </nav>
+          
+            <article>
+                <h1>Tentang Saya</h1>
+                <p>Nama Saya Arya Wijaya (2020081017), Sekarang saya adalah Mahasiswa Semester 3 Program Studi Sistem Informasi di Universitas Pembangunan Jaya.</p>
+                <p>Artikel dan Website ini dibuat untuk memenuhi Tugas 1 mata kuliah Pengolahan Informasi Berbasis Script. dengan Dosen Pengampu Bapak Augury El Rayeb, S.Kom., MMSI.</p>
+            </article>
+
+            <aside>
+                <h1>Mata Kuliah</h1>
+                <ul>
+                    <li>Perancangan dan Administrasi Basis Data</li>
+                    <li>Pembangunan Berkelanjutan</li>
+                    <li>Pengolahan Informasi Berbasis Script</li>
+                    <li>Komunikasi Antar Perangkat</li>
+                    <li>Rekayasa Perangkat Lunak</li>
+                    <li>Mobile Device (Programming) Technology</li>
+                    <li>Keamanan Informasi dan Administrasi Jaringan</li>
+                </ul>
+            </aside>
+        </div>
+
+        <footer>
+          <p>Copyright by AryaW1jaya</p>
+        </footer>
+    </div>    
+</body>
+</html>
